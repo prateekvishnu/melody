@@ -13,9 +13,6 @@
   <a href="https://crates.io/crates/melody_cli">
     <img alt="Crates.io" src="https://img.shields.io/crates/v/melody_cli?label=cli">
   </a>
-  <a href="https://github.com/yoav-lavi/melody/blob/main/LICENSE">
-    <img alt="Crates.io" src="https://img.shields.io/crates/l/melody_compiler">
-  </a>
   <a href="https://melody-playground.vercel.app">
     <img alt="melody playground" src="https://img.shields.io/badge/melody-playground-brightgreen">
   </a>
@@ -168,7 +165,7 @@ cargo install --path crates/melody_cli
 
 ### Binary
 
-- macOS binaries (aarch64 and x86_64) can be downloaded from the [release page](https://github.com/yoav-lavi/melody/releases)
+- macOS binaries (`aarch64` and `x86_64`) can be downloaded from the [release page](https://github.com/yoav-lavi/melody/releases)
 
 ### Community
 
@@ -345,7 +342,7 @@ Note: these are not supported when testing in the CLI (`-t` or `-f`) as the rege
   - `<category::unassigned>` - any code point to which no character has been assigned
 
 
-These descriptions are from https://www.regular-expressions.info/unicode.html
+These descriptions are from [regular-expressions.info](https://www.regular-expressions.info/unicode.html)
 
 ### Character Ranges
 

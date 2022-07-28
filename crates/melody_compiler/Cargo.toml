@@ -4,10 +4,10 @@ description = "The Melody language compiler"
 homepage = "https://github.com/yoav-lavi/melody"
 repository = "https://github.com/yoav-lavi/melody"
 readme = "README.md"
-version = "0.18.0"
+version = "0.18.1"
 edition = "2021"
 rust-version = "1.58.0"
-license = "MIT"
+license = "MIT OR Apache-2.0"
 keywords = ["melody", "melodylang", "language", "compiler"]
 categories = ["compilers"]
 
@@ -17,9 +17,9 @@ fuzzer = ["arbitrary"]
 [dependencies]
 pest = "2.1.3"
 pest_derive = "2.1.0"
-once_cell = "1.10.0"
-arbitrary = { version = "1.1.0", features = ["derive"], optional = true }
-thiserror = "1.0.30"
+once_cell = "1.12.0"
+arbitrary = { version = "1.1.3", features = ["derive"], optional = true }
+thiserror = "1.0.31"
 
 [dev-dependencies]
 criterion = "0.3.5"

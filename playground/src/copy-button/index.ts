@@ -4,6 +4,10 @@ enum CopyButtonTextState {
   Default = 'Copy Link to Source',
 }
 
+const COPY_BUTTON_ERROR = '#BF616A75';
+const COPY_BUTTON_HIGHLIGHT = '#3B4252CC';
+const COPY_BUTTON_COLOR = '#2E3440';
+
 const copyButton = document.getElementById('copy-button');
 const originalText = copyButton?.textContent ?? CopyButtonTextState.Default;
 
@@ -15,11 +19,14 @@ const onCopyButtonClick = async (copyButton: HTMLElement) => {
       )}`,
     );
     copyButton.textContent = CopyButtonTextState.Copied;
+    copyButton.style.background = COPY_BUTTON_HIGHLIGHT;
   } catch (error) {
     copyButton.textContent = CopyButtonTextState.Error;
+    copyButton.style.background = COPY_BUTTON_ERROR;
   } finally {
     setTimeout(() => {
       copyButton.textContent = originalText;
+      copyButton.style.background = COPY_BUTTON_COLOR;
     }, 3000);
   }
 };

@@ -1,10 +1,10 @@
 [package]
 name = "melody_wasm"
-version = "0.18.0"
+version = "0.18.1"
 edition = "2021"
 rust-version = "1.58.0"
 description = "WASM bindings for the Melody language compiler"
-license = "MIT"
+license = "MIT OR Apache-2.0"
 repository = "https://github.com/yoav-lavi/melody"
 keywords = ["melody", "melodylang", "language", "wasm"]
 categories = ["webassembly"]
@@ -14,5 +14,5 @@ categories = ["webassembly"]
 crate-type = ["cdylib"]
 
 [dependencies]
-wasm-bindgen = "0.2.80"
-melody_compiler = { version = "0.18.0", path = "../melody_compiler", default-features = false }
+wasm-bindgen = "0.2.81"
+melody_compiler = { version = "0.18.1", path = "../melody_compiler", default-features = false }
